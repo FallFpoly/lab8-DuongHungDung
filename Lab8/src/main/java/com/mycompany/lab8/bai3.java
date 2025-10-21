@@ -8,9 +8,15 @@ package com.mycompany.lab8;
  *
  * @author ICT
  */
-public class bai3 {
+import java.util.Scanner;
 
+public class bai3 {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Nhap ho ten: ");
+        String name = sc.nextLine();
+
+        System.out.println("Sau khi viet hoa: " + XPoly.toUpperFirstChar(name));
     }
 }
